@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6947a0da-e99a-4d29-92c2-752ea9d2a38c" name="Default" comment="">
+    <list default="true" id="8e6908a2-e091-45bc-ba42-2be717561e79" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/sandbox.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/sandbox_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/sandbox_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/src/main/java/MyFirstProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/MyFirstProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/classes/java/main/MyFirstProgram.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/distributions/sandbox.tar" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build/distributions/sandbox.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/distributions/sandbox.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build/distributions/sandbox.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/libs/sandbox.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build/libs/sandbox.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/scripts/sandbox" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build/scripts/sandbox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/gradlew" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/sandbox/.gradle/" />
-    <ignored path="$PROJECT_DIR$/sandbox/build/" />
-    <ignored path="$PROJECT_DIR$/sandbox/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,13 +42,9 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyFirstProgram.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/MyFirstProgram.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-            </state>
-          </provider>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sandbox/build.gradle">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -44,394 +53,47 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
-    <option name="myGradleHomes">
-      <map>
-        <entry key="$PROJECT_DIR$/sandbox" value="C:\Tools\gradle-4.0.2" />
-      </map>
-    </option>
-    <option name="myGradleVersions">
-      <map>
-        <entry key="$PROJECT_DIR$/sandbox" value="4.0.2" />
-      </map>
-    </option>
-    <option name="availableProjects">
-      <map>
-        <entry>
-          <key>
-            <ExternalProjectPojo>
-              <option name="name" value="sandbox" />
-              <option name="path" value="$PROJECT_DIR$/sandbox" />
-            </ExternalProjectPojo>
-          </key>
-          <value>
-            <list>
-              <ExternalProjectPojo>
-                <option name="name" value="sandbox" />
-                <option name="path" value="$PROJECT_DIR$/sandbox" />
-              </ExternalProjectPojo>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="availableTasks">
-      <map>
-        <entry key="$PROJECT_DIR$/sandbox">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'sandbox'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'sandbox'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'sandbox'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'sandbox'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs this project as a JVM application" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="run" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Gradle wrapper files." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="wrapper" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Creates OS specific scripts to run the project as a JVM application." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="startScripts" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'sandbox'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the project as a distribution as-is." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="installDist" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'sandbox'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the main distributions" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="assembleDist" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Initializes a new Gradle build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="init" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'sandbox'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'sandbox'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Bundles the project as a distribution." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="distTar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Bundles the project as a distribution." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="distZip" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'sandbox'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sandbox" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/sandbox" value="4592378903601" />
         <entry key="$PROJECT_DIR$/sandbox/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/sandbox/build.gradle" value="910243767" />
-        <entry key="$PROJECT_DIR$/sandbox/gradle/wrapper/gradle-wrapper.properties" value="3815172834" />
+        <entry key="$PROJECT_DIR$/sandbox/gradle/wrapper/gradle-wrapper.properties" value="3428913770" />
       </map>
-    </option>
-    <option name="projectBuildClasspath">
-      <map>
-        <entry key="$PROJECT_DIR$/sandbox">
-          <value>
-            <ExternalProjectBuildClasspathPojo>
-              <option name="modulesBuildClasspath">
-                <map>
-                  <entry key="$PROJECT_DIR$/sandbox">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$/sandbox" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="name" value="sandbox" />
-              <option name="projectBuildClasspath">
-                <list>
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/ant-1.9.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/ant-launcher-1.9.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-base-services-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-base-services-groovy-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-cli-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-core-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-docs-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-installation-beacon-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-jvm-services-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-launcher-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-logging-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-messaging-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-model-core-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-model-groovy-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-native-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-process-services-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-resources-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-runtime-api-info-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-script-kotlin-0.9.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-script-kotlin-compiler-plugin-0.9.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-script-kotlin-tooling-builders-0.9.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-script-kotlin-tooling-models-0.9.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-tooling-api-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/gradle-wrapper-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/groovy-all-2.4.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-announce-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-antlr-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-build-cache-http-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-build-comparison-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-build-init-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-code-quality-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-composite-builds-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-dependency-management-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-diagnostics-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-ear-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-ide-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-ide-native-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-ide-play-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-ivy-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-jacoco-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-javascript-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-language-groovy-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-language-java-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-language-jvm-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-language-native-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-language-scala-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-maven-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-osgi-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-platform-base-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-platform-jvm-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-platform-native-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-platform-play-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-plugin-development-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-plugin-use-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-plugins-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-publish-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-reporting-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-resources-http-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-resources-s3-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-resources-sftp-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-scala-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-signing-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-test-kit-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-testing-base-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-testing-jvm-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-testing-native-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-tooling-api-builders-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/gradle-workers-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-bin/be99721vbppnjuga6pbz1stgj/gradle-4.0.2/lib/plugins/ivy-2.2.0.jar" />
-                  <option value="$PROJECT_DIR$/sandbox/buildSrc/src/main/java" />
-                  <option value="$PROJECT_DIR$/sandbox/buildSrc/src/main/groovy" />
-                </list>
-              </option>
-            </ExternalProjectBuildClasspathPojo>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="projectSyncType">
-      <map>
-        <entry key="$PROJECT_DIR$/sandbox" value="IMPORT" />
-      </map>
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/MyFirstProgram.java" />
-      </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="100" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="820" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Default" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Default">
           <expand>
             <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_directory_selection" value="$PROJECT_DIR$/sandbox/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sandbox/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="ru.stqa.pft.sandbox" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -446,14 +108,6 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-    </configuration>
-    <configuration name="MyFirstProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.MyFirstProgram" />
-      <module name="sandbox_main" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -466,7 +120,7 @@
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
@@ -484,7 +138,7 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -495,40 +149,22 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MyFirstProgram" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6947a0da-e99a-4d29-92c2-752ea9d2a38c" name="Default" comment="" />
-      <created>1530795326204</created>
+      <changelist id="8e6908a2-e091-45bc-ba42-2be717561e79" name="Default" comment="" />
+      <created>1530821058137</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1530795326204</updated>
+      <updated>1530821058137</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="100" y="20" width="1400" height="820" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -537,13 +173,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32943678" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="right" id="Gradle" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -551,32 +186,26 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32943678" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/MyFirstProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/MyFirstProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandbox/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
