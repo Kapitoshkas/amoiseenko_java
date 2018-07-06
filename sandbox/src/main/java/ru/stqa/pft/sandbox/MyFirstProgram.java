@@ -4,7 +4,7 @@ public class MyFirstProgram {
 	public static void main(String args[])
 	{
     	hello("world");
-		hello("loh");
+		hello("puh");
 		hello("rodos");
 
 		double l = 5;
