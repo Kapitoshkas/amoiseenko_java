@@ -37,4 +37,12 @@ public class GroupHelper extends Helperbase {
         click(By.xpath("//div[@id='content']/form/span[2]/input"));
       }
   }
+
+  public void initGroupModification (){
+    click(By.name("edit"));
+  }
+
+  public void submitGroupModification() {
+    click(By.name("update"));
+  }
 }
