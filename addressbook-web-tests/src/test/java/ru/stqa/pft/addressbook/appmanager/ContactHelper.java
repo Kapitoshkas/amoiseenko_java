@@ -4,18 +4,14 @@ import org.openqa.selenium.By;
 import ru.stqa.pft.addressbook.model.ContactData;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class ContactHelper extends Helperbase{
+public class ContactHelper extends Helperbase {
 
-  public ContactHelper (FirefoxDriver wd) {
+  public ContactHelper(FirefoxDriver wd) {
     super(wd);
   }
 
   public void submitNewContactCreation() {
     click(By.xpath("//div[@id='content']/form/input[21]"));
-  }
-
-  public void click(By locator) {
-    wd.findElement(locator).click();
   }
 
   public void fillNewContactForm(ContactData contactData) {
@@ -42,10 +38,16 @@ public class ContactHelper extends Helperbase{
     type(By.name("phone2"), contactData.getPhone2());
   }
 
-  public void type(By locator, String text) {
-    click(locator);
-    wd.findElement(locator).clear();
-    wd.findElement(locator).sendKeys(text);
+  public void selectContact() {
+    wd.findElement(By.xpath ("//input[@type='checkbox']")).click();
   }
 
-}
+  public void clickDeleteButton() {
+    click(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
+  }
+
+  public void clickDeletePopup() {
+    wd.switchTo().alert().accept();
+  }
+
+  }
