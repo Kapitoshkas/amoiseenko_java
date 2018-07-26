@@ -58,4 +58,8 @@ public class ContactHelper extends Helperbase {
     click(By.xpath("//div[@id='content']/form[1]/input[22]"));
   }
 
+  public void returnToHomePage() {
+    click(By.linkText("home"));
+  }
+
   }
