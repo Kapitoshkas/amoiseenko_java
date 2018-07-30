@@ -2,6 +2,8 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 
 public class ContactHelper extends Helperbase {
@@ -14,7 +16,7 @@ public class ContactHelper extends Helperbase {
     click(By.xpath("//div[@id='content']/form/input[21]"));
   }
 
-  public void fillNewContactForm(ContactData contactData) {
+  public void fillNewContactForm(ContactData contactData, boolean creation) {
     type(By.name("firstname"), contactData.getName());
     type(By.name("middlename"), contactData.getMiddlename());
     type(By.name("lastname"), contactData.getLastname());
@@ -36,30 +38,37 @@ public class ContactHelper extends Helperbase {
     type(By.name("byear"), contactData.getByear());
     type(By.name("address2"), contactData.getAddress2());
     type(By.name("phone2"), contactData.getPhone2());
+
+    if (creation){
+      new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+    } else {
+      Assert.assertFalse(isElementPresent(By.name("new_group")));
+    }
+
   }
 
-  public void selectContact() {
-    wd.findElement(By.xpath ("//input[@type='checkbox']")).click();
-  }
+  public void selectContact () {
+      wd.findElement(By.xpath("//input[@type='checkbox']")).click();
+    }
 
-  public void clickDeleteButton() {
-    click(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
-  }
+    public void clickDeleteButton () {
+      click(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
+    }
 
-  public void clickDeletePopup() {
-    wd.switchTo().alert().accept();
-  }
+    public void clickDeletePopup () {
+      wd.switchTo().alert().accept();
+    }
 
-  public void initContactModification (){
-    click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
-  }
+    public void initContactModification () {
+      click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
+    }
 
-  public void submitContactModification() {
-    click(By.xpath("//div[@id='content']/form[1]/input[22]"));
-  }
+    public void submitContactModification () {
+      click(By.xpath("//div[@id='content']/form[1]/input[22]"));
+    }
 
-  public void returnToHomePage() {
-    click(By.linkText("home"));
-  }
+    public void returnToHomePage () {
+      click(By.linkText("home"));
+    }
 
   }
