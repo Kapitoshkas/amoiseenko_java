@@ -63,4 +63,8 @@ public class ApplicationManager {
   public void gotoContactPage() {
     navigationHelper.gotoContactPage();
   }
+
+  public void returnToHomePage() {
+    navigationHelper.returnToHomePage();
+  }
 }
