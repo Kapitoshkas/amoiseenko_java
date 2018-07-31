@@ -32,11 +32,7 @@ public class GroupHelper extends Helperbase {
     click(By.name("delete"));
   }
 
-  public void selectGroup() {
-      if (!wd.findElement(By.xpath("//div[@id='content']/form/span[2]/input")).isSelected()) {
-        click(By.xpath("//div[@id='content']/form/span[2]/input"));
-      }
-  }
+  public void selectGroup() {click(By.name("selected[]")); }
 
   public void initGroupModification (){
     click(By.name("edit"));
@@ -45,4 +41,16 @@ public class GroupHelper extends Helperbase {
   public void submitGroupModification() {
     click(By.name("update"));
   }
+
+  public void createGroup(GroupData group) {
+    initGroupCreation();
+     fillGroupForm(group);
+    submitGroupCreation();
+    returnToGroupPage();
+  }
+
+  public boolean isThereAGroup() {
+    return isElementPresent(By.name("selected[]"));
+  }
 }
+
