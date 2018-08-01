@@ -71,4 +71,13 @@ public class ContactHelper extends Helperbase {
       click(By.linkText("home"));
     }
 
+  public void createContact(ContactData contact, boolean creation) {
+    fillNewContactForm(contact,true);
+    submitNewContactCreation();
+    returnToHomePage();
   }
+
+  public boolean isThereAContact() {
+    return isElementPresent(By.xpath("//input[@type='checkbox']"));
+  }
+}

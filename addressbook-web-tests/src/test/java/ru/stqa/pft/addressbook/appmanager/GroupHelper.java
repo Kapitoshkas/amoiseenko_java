@@ -44,7 +44,7 @@ public class GroupHelper extends Helperbase {
 
   public void createGroup(GroupData group) {
     initGroupCreation();
-     fillGroupForm(group);
+    fillGroupForm(group);
     submitGroupCreation();
     returnToGroupPage();
   }

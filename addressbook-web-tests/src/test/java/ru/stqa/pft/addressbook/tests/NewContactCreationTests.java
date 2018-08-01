@@ -9,9 +9,7 @@ public class NewContactCreationTests extends TestBase{
   @Test
   public void testNewContactCreation() {
     app.gotoContactPage();
-    app.getContactHelper().fillNewContactForm(new ContactData("first name", "middle name", "last name", "new title", "new company", "first address", "first home", "first mobile", "first work", "first mail", "second mail", "1900", "second address", "second home", "test33"), true);
-    app.getContactHelper().submitNewContactCreation();
-    app.returnToHomePage();
+    app.getContactHelper().createContact(new ContactData("first name", "middle name", "last name", "new title", "new company", "first address", "first home", "first mobile", "first work", "first mail", "second mail", "1900", "second address", "second home", "test33"), false);
   }
 
 }
