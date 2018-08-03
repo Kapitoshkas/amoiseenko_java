@@ -72,7 +72,7 @@ public class ContactHelper extends Helperbase {
     }
 
   public void createContact(ContactData contact, boolean creation) {
-    fillNewContactForm(contact,true);
+    fillNewContactForm(contact,creation);
     submitNewContactCreation();
     returnToHomePage();
   }
