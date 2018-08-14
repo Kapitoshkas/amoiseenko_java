@@ -2,9 +2,11 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
+import org.openqa.selenium.WebElement;
 import ru.stqa.pft.addressbook.model.ContactData;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ContactHelper extends Helperbase {
 
@@ -39,16 +41,16 @@ public class ContactHelper extends Helperbase {
     type(By.name("address2"), contactData.getAddress2());
     type(By.name("phone2"), contactData.getPhone2());
 
-    if (creation){
+  /*  if (creation){
       new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
     } else {
       Assert.assertFalse(isElementPresent(By.name("new_group")));
-    }
+    }*/
 
   }
 
-  public void selectContact () {
-      wd.findElement(By.xpath("//input[@type='checkbox']")).click();
+  public void selectContact (int index) {
+      wd.findElements(By.xpath("//input[@type='checkbox']")).get(index).click();
     }
 
     public void clickDeleteButton () {
@@ -84,11 +86,26 @@ public class ContactHelper extends Helperbase {
   }
 
   public boolean isThereAContact() {
-    return isElementPresent(By.xpath("//input[@type='checkbox']"));
+    return isElementPresent(By.name("selected[]"));
   }
 
   public int getContactCount() {
     return wd.findElements(By.name("selected[]")).size();
+  }
+
+  public List<ContactData> getContactList() {
+    List<ContactData> contacts = new ArrayList<ContactData>();
+    List<WebElement> rows = wd.findElements(By.name("entry"));
+    for (WebElement row : rows) {
+      List<WebElement> cells = row.findElements(By.tagName("td"));
+     // int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
+      String lastname = cells.get(1).getText();
+      String name = cells.get(2).getText();
+      ContactData contact = new ContactData(lastname, name);
+      contacts.add(contact);
+    }
+    return contacts;
+  }
   }
 
 
@@ -105,4 +122,4 @@ public class ContactHelper extends Helperbase {
       }
     return contacts;
   }*/
-  }
+

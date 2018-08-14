@@ -36,7 +36,7 @@ public class ContactData {
     this.group = group;
   }
 
-  public ContactData(String name,  String lastname, String group){
+  public ContactData(String name,  String lastname){
     this.name = name;
     this.middlename = "";
     this.lastname = lastname;
@@ -51,7 +51,7 @@ public class ContactData {
     this.byear = "";
     this.address2 = "";
     this.phone2 = "";
-    this.group = group;
+    this.group = "";
       }
 
 
