@@ -77,7 +77,32 @@ public class ContactHelper extends Helperbase {
     returnToHomePage();
   }
 
+  public void createContact(ContactData contact) {
+    fillNewContactForm(contact,true);
+    submitNewContactCreation();
+    returnToHomePage();
+  }
+
   public boolean isThereAContact() {
     return isElementPresent(By.xpath("//input[@type='checkbox']"));
   }
-}
+
+  public int getContactCount() {
+    return wd.findElements(By.name("selected[]")).size();
+  }
+
+
+ /* public List<ContactData> getContactList() {
+    List<ContactData> contacts = new ArrayList<ContactData>();
+    List<WebElement> elements = wd.findElements(By.name("entry"));
+    for (WebElement element : elements) {
+      List<WebElement> cells = element.findElements(By.tagName("td"));
+      String name = cells.get(2).getText();
+      String lastname = cells.get(1).getText();
+      int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+      ContactData contact = new ContactData(id, name, lastname);
+      contacts.add(contact);
+      }
+    return contacts;
+  }*/
+  }
