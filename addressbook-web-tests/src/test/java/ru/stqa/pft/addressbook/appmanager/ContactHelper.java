@@ -3,6 +3,8 @@ package ru.stqa.pft.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 
 import java.util.ArrayList;
@@ -21,7 +23,7 @@ public class ContactHelper extends Helperbase {
   public void fillNewContactForm(ContactData contactData, boolean creation) {
     type(By.name("firstname"), contactData.getName());
     type(By.name("middlename"), contactData.getMiddlename());
-    type(By.name("lastname"), contactData.getLastname());
+    type(By.name("lastname"), contactData.getLastName());
     click(By.name("nickname"));
     type(By.name("title"), contactData.getTitle());
     type(By.name("company"), contactData.getCompany());
@@ -41,12 +43,11 @@ public class ContactHelper extends Helperbase {
     type(By.name("address2"), contactData.getAddress2());
     type(By.name("phone2"), contactData.getPhone2());
 
-  /*  if (creation){
+      if (creation) {
       new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
     } else {
       Assert.assertFalse(isElementPresent(By.name("new_group")));
-    }*/
-
+    }
   }
 
   public void selectContact (int index) {
@@ -73,11 +74,11 @@ public class ContactHelper extends Helperbase {
       click(By.linkText("home"));
     }
 
-  public void createContact(ContactData contact, boolean creation) {
+ /* public void createContact(ContactData contact, boolean creation) {
     fillNewContactForm(contact,creation);
     submitNewContactCreation();
     returnToHomePage();
-  }
+  }*/
 
   public void createContact(ContactData contact) {
     fillNewContactForm(contact,true);
@@ -95,13 +96,13 @@ public class ContactHelper extends Helperbase {
 
   public List<ContactData> getContactList() {
     List<ContactData> contacts = new ArrayList<ContactData>();
-    List<WebElement> rows = wd.findElements(By.name("entry"));
-    for (WebElement row : rows) {
-      List<WebElement> cells = row.findElements(By.tagName("td"));
-     // int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
-      String lastname = cells.get(1).getText();
+    List<WebElement> elements = wd.findElements(By.name("entry"));
+    for (WebElement element : elements) {
+      List<WebElement> cells = element.findElements(By.tagName("td"));
+      int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
       String name = cells.get(2).getText();
-      ContactData contact = new ContactData(lastname, name);
+      String lastname = cells.get(1).getText();
+      ContactData contact = new ContactData(id, name, lastname);
       contacts.add(contact);
     }
     return contacts;
@@ -109,17 +110,4 @@ public class ContactHelper extends Helperbase {
   }
 
 
- /* public List<ContactData> getContactList() {
-    List<ContactData> contacts = new ArrayList<ContactData>();
-    List<WebElement> elements = wd.findElements(By.name("entry"));
-    for (WebElement element : elements) {
-      List<WebElement> cells = element.findElements(By.tagName("td"));
-      String name = cells.get(2).getText();
-      String lastname = cells.get(1).getText();
-      int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-      ContactData contact = new ContactData(id, name, lastname);
-      contacts.add(contact);
-      }
-    return contacts;
-  }*/
 
