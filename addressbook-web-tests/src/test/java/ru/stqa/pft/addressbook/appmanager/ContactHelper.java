@@ -86,6 +86,20 @@ public class ContactHelper extends Helperbase {
     returnToHomePage();
   }
 
+  public void modify(int index, ContactData contact) {
+    initContactModification(index);
+    fillNewContactForm(contact,false);
+    submitContactModification();
+    returnToHomePage();
+  }
+
+  public void delete(int index) {
+    selectContact(index);
+    clickDeleteButton();
+    clickDeletePopup();
+    returnToHomePage();
+  }
+
   public boolean isThereAContact() {
     return isElementPresent(By.name("selected[]"));
   }
@@ -94,7 +108,7 @@ public class ContactHelper extends Helperbase {
     return wd.findElements(By.name("selected[]")).size();
   }
 
-  public List<ContactData> getContactList() {
+  public List<ContactData> list() {
     List<ContactData> contacts = new ArrayList<ContactData>();
     List<WebElement> elements = wd.findElements(By.name("entry"));
     for (WebElement element : elements) {
@@ -102,8 +116,7 @@ public class ContactHelper extends Helperbase {
       int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
       String name = cells.get(2).getText();
       String lastname = cells.get(1).getText();
-      ContactData contact = new ContactData(id, name, lastname);
-      contacts.add(contact);
+      contacts.add(new ContactData().withId(id).withName(name).withLastName(lastname));
     }
     return contacts;
   }
