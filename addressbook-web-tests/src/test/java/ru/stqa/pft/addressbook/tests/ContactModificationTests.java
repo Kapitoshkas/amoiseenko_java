@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ContactModificationTests extends TestBase {
 
-  @Test (enabled = false)
+  @Test
   public void testContactModification() {
 
     if (!app.getContactHelper().isThereAContact()) {
@@ -20,7 +20,7 @@ public class ContactModificationTests extends TestBase {
     List<ContactData> before = app.getContactHelper().getContactList();
 
     ContactData contact = new ContactData(before.get(before.size()-1).getId(),"first name",  "last name");
-    app.getContactHelper().initContactModification(before.size() - 1);
+    app.getContactHelper().initContactModification(before.size()-1);
     app.getContactHelper().fillNewContactForm(contact,false);
     app.getContactHelper().submitContactModification();
     app.getContactHelper().returnToHomePage();
