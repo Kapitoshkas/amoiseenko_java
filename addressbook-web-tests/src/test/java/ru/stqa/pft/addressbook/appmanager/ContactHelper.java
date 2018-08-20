@@ -35,6 +35,7 @@ public class ContactHelper extends Helperbase {
     type(By.name("work"), contactData.getWorkPhone());
     type(By.name("email"), contactData.getEmail());
     type(By.name("email2"), contactData.getEmail2());
+    type(By.name("email3"), contactData.getEmail3());
     if (!wd.findElement(By.xpath("//div[@id='content']/form/select[1]//option[3]")).isSelected()) {
       click(By.xpath("//div[@id='content']/form/select[1]//option[3]"));
     }
@@ -113,11 +114,13 @@ public class ContactHelper extends Helperbase {
     String homePhone = wd.findElement(By.name("home")).getAttribute("value");
     String mobilePhone = wd.findElement(By.name("mobile")).getAttribute("value");
     String workPhone = wd.findElement(By.name("work")).getAttribute("value");
-
-
+    String email = wd.findElement(By.name("email")).getAttribute("value");
+    String email2 = wd.findElement(By.name("email2")).getAttribute("value");
+    String email3 = wd.findElement(By.name("email3")).getAttribute("value");
     return new ContactData().withId(contact.getId()).withName(firstname).withLastName(lastname)
             .withAddress(address)
-            .withHomePhone(homePhone).withMobilePhone(mobilePhone).withWorkPhone(workPhone);
+            .withHomePhone(homePhone).withMobilePhone(mobilePhone).withWorkPhone(workPhone)
+            .withEmail(email).withEmail2(email2).withEmail3(email3);
 
   }
 
@@ -137,9 +140,11 @@ public class ContactHelper extends Helperbase {
       int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
       String name = cells.get(2).getText();
       String lastname = cells.get(1).getText();
+      String address = cells.get(3).getText();
+      String allEmail = cells.get(4).getText();
       String allPhones = cells.get(5).getText();
       contacts.add(new ContactData().withId(id).withName(name).withLastName(lastname)
-              .withAllPhones(allPhones));
+              .withAddress(address).withAllPhones(allPhones).withAllEmail(allEmail));
     }
     return contacts;
   }
