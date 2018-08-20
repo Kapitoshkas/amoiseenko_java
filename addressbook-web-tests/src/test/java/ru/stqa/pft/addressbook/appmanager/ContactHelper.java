@@ -30,9 +30,9 @@ public class ContactHelper extends Helperbase {
     type(By.name("title"), contactData.getTitle());
     type(By.name("company"), contactData.getCompany());
     type(By.name("address"), contactData.getAddress());
-    type(By.name("home"), contactData.getHome());
-    type(By.name("mobile"), contactData.getMobile());
-    type(By.name("work"), contactData.getWork());
+    type(By.name("home"), contactData.getHomePhone());
+    type(By.name("mobile"), contactData.getMobilePhone());
+    type(By.name("work"), contactData.getWorkPhone());
     type(By.name("email"), contactData.getEmail());
     type(By.name("email2"), contactData.getEmail2());
     if (!wd.findElement(By.xpath("//div[@id='content']/form/select[1]//option[3]")).isSelected()) {
@@ -105,6 +105,21 @@ public class ContactHelper extends Helperbase {
 
   }
 
+  public ContactData infoFromEditForm(ContactData contact) {
+    initContactModification(contact.getId());
+    String firstname = wd.findElement(By.name("firstname")).getAttribute("value");
+    String lastname = wd.findElement(By.name("lastname")).getAttribute("value");
+    String address = wd.findElement(By.name("address")).getAttribute("value");
+    String homePhone = wd.findElement(By.name("home")).getAttribute("value");
+    String mobilePhone = wd.findElement(By.name("mobile")).getAttribute("value");
+    String workPhone = wd.findElement(By.name("work")).getAttribute("value");
+
+
+    return new ContactData().withId(contact.getId()).withName(firstname).withLastName(lastname)
+            .withAddress(address)
+            .withHomePhone(homePhone).withMobilePhone(mobilePhone).withWorkPhone(workPhone);
+
+  }
 
   public boolean isThereAContact() {
     return isElementPresent(By.name("selected[]"));
@@ -122,7 +137,9 @@ public class ContactHelper extends Helperbase {
       int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
       String name = cells.get(2).getText();
       String lastname = cells.get(1).getText();
-      contacts.add(new ContactData().withId(id).withName(name).withLastName(lastname));
+      String[] phones = cells.get(5).getText().split("\n");
+      contacts.add(new ContactData().withId(id).withName(name).withLastName(lastname)
+              .withHomePhone(phones[0]).withMobilePhone(phones[1]).withWorkPhone(phones[2]));
     }
     return contacts;
   }
