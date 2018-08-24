@@ -9,9 +9,3 @@
         </classes>
     </test>
 
-    <test name="Contacts">
-        <classes>
-            <class name="ru.stqa.pft.addressbook.tests.NewContactCreationTests"/>
-        </classes>
-    </test>
-</suite>
