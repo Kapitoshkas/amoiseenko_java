@@ -20,12 +20,16 @@ public class ContactData {
   @Expose
   @Column(name = "firstname")
   private String name;
+
+  @Transient
   private String middlename;
 
   @Expose
   @Column(name = "lastname")
   private String lastName;
+  @Transient
   private String title;
+  @Transient
   private String company;
 
   @Column(name = "address")
@@ -64,7 +68,6 @@ public class ContactData {
 
   @Transient
   private String group;
-
   @Transient
   private String allPhones;
   @Transient
@@ -260,6 +263,11 @@ public class ContactData {
             "id=" + id +
             ", name='" + name + '\'' +
             ", lastName='" + lastName + '\'' +
+            ", address='" + address + '\'' +
+            ", homePhone='" + homePhone + '\'' +
+            ", mobilePhone='" + mobilePhone + '\'' +
+            ", workPhone='" + workPhone + '\'' +
+            ", email='" + email + '\'' +
             '}';
   }
 

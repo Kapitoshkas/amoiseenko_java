@@ -22,11 +22,11 @@ public class ContactHelper extends Helperbase {
     click(By.xpath("//div[@id='content']/form/input[21]"));
   }
 
-  public void fillNewContactForm(ContactData contactData, boolean creation) {
+  public void fillNewContactForm(ContactData contactData) {
     type(By.name("firstname"), contactData.getName());
     type(By.name("middlename"), contactData.getMiddlename());
     type(By.name("lastname"), contactData.getLastName());
-    attach(By.name("photo"), contactData.getPhoto());
+   // attach(By.name("photo"), contactData.getPhoto());
     click(By.name("nickname"));
     type(By.name("title"), contactData.getTitle());
     type(By.name("company"), contactData.getCompany());
@@ -85,15 +85,15 @@ public class ContactHelper extends Helperbase {
     returnToHomePage();
   }*/
 
-  public void createContact(ContactData contact) {
-    fillNewContactForm(contact,true);
+  public void createContact(ContactData contacts) {
+    fillNewContactForm(contacts);
     submitNewContactCreation();
     returnToHomePage();
   }
 
   public void modify(ContactData contact) {
     initContactModification(contact.getId());
-    fillNewContactForm(contact,false);
+    fillNewContactForm(contact);
     submitContactModification();
     returnToHomePage();
   }
@@ -130,7 +130,7 @@ public class ContactHelper extends Helperbase {
   }
 
   public int getContactCount() {
-    return wd.findElements(By.name("selected[]")).size();
+    return  wd.findElements((By.xpath("//tr[@name='entry']//input"))).size();
   }
 
   public Contacts all() {
