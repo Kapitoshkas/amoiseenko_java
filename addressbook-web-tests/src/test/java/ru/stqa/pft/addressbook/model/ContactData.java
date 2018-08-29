@@ -3,6 +3,7 @@ package ru.stqa.pft.addressbook.model;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import net.bytebuddy.agent.builder.AgentBuilder;
 import org.hibernate.annotations.ManyToAny;
 import org.hibernate.annotations.Type;
 
@@ -79,9 +80,9 @@ public class ContactData {
   @Type(type = "text")
   private String photo;
 
-  @ManyToMany
+  @ManyToMany(fetch = FetchType.EAGER)
   @JoinTable(name = "address_in_groups",
-          joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group id"))
+          joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
   private Set<GroupData> groups = new HashSet<GroupData>();
 
   public File getPhoto() {
@@ -294,6 +295,11 @@ public class ContactData {
     result = 31 * result + (name != null ? name.hashCode() : 0);
     result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
     return result;
+  }
+
+  public ContactData inGroup(GroupData group) {
+    groups.add(group);
+    return this;
   }
 }
 

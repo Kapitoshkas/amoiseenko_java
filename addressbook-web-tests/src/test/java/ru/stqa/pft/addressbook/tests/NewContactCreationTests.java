@@ -6,6 +6,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
+import ru.stqa.pft.addressbook.model.Groups;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -56,6 +57,10 @@ public class NewContactCreationTests extends TestBase{
 
   @Test(dataProvider = "validContactsFromJson")
   public void testNewContactCreation(ContactData contact) {
+    Groups groups = app.db().groups();
+    File photo = new File ("src/test/resources/stru.png");
+    ContactData contacts = new ContactData().withName("first name").withLastName("last name").withPhoto(photo)
+            .inGroup(groups.iterator().next());
     app.goTo().returnToHomePage();
     Contacts before = app.db().contacts();
     app.gotoContactPage();
