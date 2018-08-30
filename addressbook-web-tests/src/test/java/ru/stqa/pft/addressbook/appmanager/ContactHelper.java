@@ -83,6 +83,14 @@ public class ContactHelper extends Helperbase {
       click(By.linkText("home"));
     }
 
+  public void addContactToGroup() {
+    wd.findElement(By.xpath("//input[@type='submit']")).click();
+  }
+
+  public void removeContactFromGroup() {
+    wd.findElement(By.xpath("//input[@name='remove']")).click();
+  }
+
  /* public void createContact(ContactData contact, boolean creation) {
     fillNewContactForm(contact,creation);
     submitNewContactCreation();

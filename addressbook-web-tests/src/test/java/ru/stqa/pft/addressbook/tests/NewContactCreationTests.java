@@ -64,8 +64,6 @@ public class NewContactCreationTests extends TestBase{
     app.goTo().returnToHomePage();
     Contacts before = app.db().contacts();
     app.gotoContactPage();
-    //File photo = new File ("src/test/resources/stru.png");
-    //ContactData contact = new ContactData().withName("first name").withLastName("last name").withGroup("test1").withPhoto(photo);
     app.contact().createContact(contact);
     assertThat(app.contact().getContactCount(), equalTo(before.size() + 1));
     Contacts after = app.db().contacts();
