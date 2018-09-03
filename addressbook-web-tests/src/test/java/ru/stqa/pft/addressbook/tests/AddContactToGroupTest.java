@@ -14,6 +14,14 @@ public class AddContactToGroupTest extends TestBase {
 
   @BeforeMethod
   public void ensurePreconditions() {
+    if (app.db().contacts().size() == 0)  {
+      app.goTo().returnToHomePage();
+      app.contact().createContact(new ContactData().withName("first name")
+              .withLastName("last name")
+              .withAddress("Moscow")
+              .withMobilePhone("+71234567890")
+              .withEmail("test@test.com"));
+    }
     if (app.db().groups().size() == 0) {
       app.goTo().groupPage();
       app.group().create(new GroupData().withName("test1").withHeader("Header").withFooter("Footer"));
