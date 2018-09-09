@@ -42,7 +42,7 @@ public class DbHelper {
     return new Contacts(result);
   }
 
-  public int getContactLastId(ContactData contact) {
+/*  public int getContactLastId(ContactData contact) {
     Session session = sessionFactory.openSession();
     session.getTransaction().begin();
     List<ContactData> result = session.createQuery("from ContactData where firstname = '" + contact.getName() +
@@ -58,6 +58,6 @@ public class DbHelper {
       }
     }
     return maxId;
-  }
+  }*/
 
 }

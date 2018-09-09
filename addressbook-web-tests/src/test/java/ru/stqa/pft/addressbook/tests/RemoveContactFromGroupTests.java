@@ -27,10 +27,10 @@ public class RemoveContactFromGroupTests extends TestBase{
     }
   }
 
-  @Test
+  /*@Test (enabled = false)
   public void testRemoveContactFromGroup() {
     Groups groups = app.db().groups();
-    GroupData ourGroup = groups.iterator().next(); //- любая, и мы ее делаем нашей =).
+    GroupData ourGroup = groups.iterator().next();
     app.returnToHomePage();
     ContactData removingContact = new ContactData().withName("first")
             .withLastName("last name")
@@ -53,5 +53,5 @@ public class RemoveContactFromGroupTests extends TestBase{
       }
     }
         assertThat(contactToCompare.inGroup(ourGroup).getGroups(), equalTo(removingContact.getGroups()));
-  }
+  }*/
 }

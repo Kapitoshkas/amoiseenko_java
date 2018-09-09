@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
+import ru.stqa.pft.addressbook.model.GroupData;
 
 import java.util.HashSet;
 import java.util.List;
@@ -83,14 +84,53 @@ public class ContactHelper extends Helperbase {
       click(By.linkText("home"));
     }
 
-  public void addContactToGroup() {
-    wd.findElement(By.xpath("//input[@type='submit']")).click();
+  public void addContactToGroup(GroupData group) {
+    new Select(wd.findElement(By.name("to_group")))
+            .selectByVisibleText(group.getName());
+  }
+
+  public void addContactToGroup(ContactData contact, GroupData group) {
+    selectContactById(contact.getId());
+    addContactToGroup(group);
+    clickAddGroup();
+    contactCashe = null;
+    returnToGroupPage(group.getId());
   }
 
   public void removeContactFromGroup() {
     wd.findElement(By.xpath("//input[@name='remove']")).click();
   }
 
+  public void removeGroup(ContactData contact, GroupData groups) {
+    selectGroup(groups);
+    selectContactById(contact.getId());
+    removeGroupFromContact();
+    contactCashe = null;
+    returnToGroupPage(groups.getId());
+    returnToAllGroupPage();
+  }
+
+  private void selectGroup(GroupData group) {
+    new Select(wd.findElement(By.name("group")))
+            .selectByVisibleText(group.getName());
+  }
+
+  private void removeGroupFromContact() {
+    click(By.name("remove"));
+  }
+
+  private void returnToGroupPage(int id) {
+    wd.findElement(By.cssSelector(String.format("a[href='./?group=%s']", id))).click();
+  }
+
+  private void returnToAllGroupPage() {
+    new Select(wd.findElement(By.name("group")))
+            .selectByVisibleText("[all]");
+  }
+
+  private void clickAddGroup() {
+    click(By.name("add"));
+  }
  /* public void createContact(ContactData contact, boolean creation) {
     fillNewContactForm(contact,creation);
     submitNewContactCreation();
@@ -160,6 +200,29 @@ public class ContactHelper extends Helperbase {
               .withAddress(address).withAllPhones(allPhones).withAllEmail(allEmail));
     }
     return contacts;
+  }
+
+  private Contacts contactCashe = null;
+  public Contacts allfromCashe() {
+    if (contactCashe != null) {
+      return new Contacts(contactCashe);
+    }
+    contactCashe = new Contacts();
+    List<WebElement> rows = wd.findElements(By.name("entry"));
+    for (WebElement row : rows) {
+      List<WebElement> sells = row.findElements(By.tagName("td")) ;
+      int id = Integer.parseInt(row.findElement(By.tagName("input")).getAttribute("value"));
+      String lastname = sells.get(1).getText();
+      String firstname = sells.get(2).getText();
+      String address = sells.get(3).getText();
+      String allEmails = sells.get(4).getText();
+      String allPhones = sells.get(5).getText();
+
+      ContactData contact = new ContactData().withId(id).withName(firstname).withLastName(lastname)
+              .withAddress(address).withAllEmail(allEmails).withAllPhones(allPhones);
+      contactCashe.add(contact);
+    }
+    return new Contacts(contactCashe);
   }
 
 }
