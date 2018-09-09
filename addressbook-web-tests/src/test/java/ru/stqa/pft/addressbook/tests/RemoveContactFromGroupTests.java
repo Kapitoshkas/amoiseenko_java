@@ -27,6 +27,42 @@ public class RemoveContactFromGroupTests extends TestBase{
     }
   }
 
+
+  @Test
+  public void testAddContactToGroup() {
+    Contacts contacts = app.db().contacts();
+    ContactData contact = contacts.iterator().next();
+
+    int beforeGroups = contact.getGroups().size();
+    Groups groups = app.db().groups();
+    GroupData group = groups.iterator().next();
+    int beforeContacts = group.getContacts().size();
+
+    for (ContactData c: contacts) {
+      System.out.println("c " + c);
+      if (c.getGroups().size() != 0) {
+        contact = c;
+        System.out.println("contact" + contact);
+        break;
+      }
+    }
+
+    if (beforeGroups == 0) {
+      app.contact().addContactToGroup(contact, group);
+      beforeContacts = app.db().groups().iterator().next().withId(group.getId()).getContacts().size();
+      app.contact().removeGroup(contact, group);
+    } else {
+      group = contact.getGroups().iterator().next();
+      app.contact().removeGroup(contact, group);
+    }
+    int afterGroups = contact.getGroups().size();
+    int afterContacts = app.db().groups().iterator().next().withId(group.getId()).getContacts().size();
+
+    assertThat(afterGroups, equalTo(beforeGroups));
+    assertThat(afterContacts, equalTo(beforeContacts - 1));
+  }
+
+
   /*@Test (enabled = false)
   public void testRemoveContactFromGroup() {
     Groups groups = app.db().groups();
