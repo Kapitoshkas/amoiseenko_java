@@ -102,7 +102,7 @@ public class ContactHelper extends Helperbase {
   }
 
   public void removeGroup(ContactData contact, GroupData groups) {
-    selectGroup(groups);
+
     selectContactById(contact.getId());
     removeGroupFromContact();
     contactCashe = null;
@@ -110,10 +110,7 @@ public class ContactHelper extends Helperbase {
     returnToAllGroupPage();
   }
 
-  private void selectGroup(GroupData group) {
-    new Select(wd.findElement(By.name("group")))
-            .selectByVisibleText(group.getName());
-  }
+
 
   private void removeGroupFromContact() {
     click(By.name("remove"));
@@ -136,6 +133,31 @@ public class ContactHelper extends Helperbase {
     submitNewContactCreation();
     returnToHomePage();
   }*/
+
+  public String getCurrentGroup() {
+    WebElement data = wd.findElement(By.xpath("//select[@name=\"to_group\"]"));
+    List<WebElement> elms = data.findElements(By.xpath("./option"));
+    return elms.get(0).getText();
+  }
+
+  public void clickSelectedById(ContactData deletedContact) {
+    WebElement data = wd.findElement(By.cssSelector("input[id='"+deletedContact.getId()+"']"));
+    data.click();
+  }
+
+  public void clickAddToGroup() {
+    click(By.xpath("//input[@name=\"add\"]"));
+  }
+
+  public void removeFromGroup() {
+    WebElement elm = wd.findElement(By.xpath("//input[@name='remove']"));
+    elm.click();
+  }
+
+  public void selectGroup(String name) {
+    Select elm = new Select(wd.findElement(By.xpath("//select[@name=\"group\"]")));
+    elm.selectByVisibleText(name);
+  }
 
   public void createContact(ContactData contacts) {
     fillNewContactForm(contacts,true);

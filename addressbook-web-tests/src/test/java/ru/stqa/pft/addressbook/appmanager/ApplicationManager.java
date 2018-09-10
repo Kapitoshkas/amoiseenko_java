@@ -85,4 +85,6 @@ public class ApplicationManager {
   public DbHelper db() {
     return dbHelper;
   }
+
+  public ContactHelper getContactHelper() {return contactHelper;}
 }

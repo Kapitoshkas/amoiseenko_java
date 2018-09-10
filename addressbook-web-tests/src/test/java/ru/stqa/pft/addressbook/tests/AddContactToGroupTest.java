@@ -27,36 +27,35 @@ public class AddContactToGroupTest extends TestBase {
         app.group().create(new GroupData().withName("test1").withHeader("Header").withFooter("Footer"));
       }
   }
+  @Test
+  public void contactToGroup() throws InterruptedException {
+  Contacts before = app.db().contacts();//app.getContactHelper().all();
+  ContactData modContact = before.iterator().next();
+  //int before = app.getContactHelper().getContactCount();
+  String curgroup = app.getContactHelper().getCurrentGroup();
 
- /* @Test
-  public void testAddContactToGroup() {
-    ContactData addingToGroupContact = new ContactData().withName("first name")
-            .withLastName("last name")
-            .withAddress("Moscow")
-            .withMobilePhone("+71234567890")
-            .withEmail("test@test.com");
-    app.gotoContactPage();
-    app.contact().createContact(addingToGroupContact);
+    app.getContactHelper().clickSelectedById(modContact);
 
-    Groups beforeGroups = app.db().groups();
-    GroupData groupForAddingContact = beforeGroups.iterator().next();
-    app.returnToHomePage();
+    app.getContactHelper().clickAddToGroup();
 
-    int id = app.db().getContactLastId(addingToGroupContact);
-    app.contact().selectContactById(id);
-    app.group().selectGroupToIncludeContact(groupForAddingContact);
-    app.contact().addContactToGroup();
-    Contacts afterContacts = app.db().contacts();
-    ContactData contactToCompare = new ContactData();
-    for(ContactData contact: afterContacts){
-      if (contact.getId() == id){
-        contactToCompare = contact;
-        break;
-      }
+    Thread.sleep(500);
+    app.goTo().returnToHomePage();
+
+  Contacts after = app.db().contacts();
+  Groups groups = new Groups();
+  String aftergroup="";
+    for ( ContactData contact :  after ) {
+    if (contact.equals(modContact))
+      groups = contact.getGroups();
+    for (GroupData group: groups) {
+      if (group.getGroupName().equals(curgroup))
+        aftergroup = group.getGroupName();
     }
-    assertThat(contactToCompare.getGroups(), equalTo(addingToGroupContact.inGroup(groupForAddingContact).getGroups()));
-  }*/
+  }
+  assertThat(curgroup, equalTo(aftergroup));
+}
 
+/*
   @Test
   public void testAddContactToGroup() {
     Contacts contacts = app.db().contacts();
@@ -92,5 +91,6 @@ public class AddContactToGroupTest extends TestBase {
     assertThat(after, equalTo(before));
     assertThat(newContacts, equalTo(oldContacts +  1));
   }
+*/
 
 }

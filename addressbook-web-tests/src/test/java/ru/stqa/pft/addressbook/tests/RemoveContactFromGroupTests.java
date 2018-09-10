@@ -27,8 +27,52 @@ public class RemoveContactFromGroupTests extends TestBase{
     }
   }
 
-
   @Test
+  public void removeContactFromGroup() throws InterruptedException {
+    Contacts before = app.db().contacts();
+    ContactData deleteContactGroup = new ContactData();
+    GroupData deleteGroup = new GroupData();
+    boolean found = false;
+    for ( ContactData contact :  before ) {
+      Groups groups = contact.getGroups();
+      if (groups.size()!=0) {
+        deleteContactGroup = contact;
+        deleteGroup = groups.delegate().iterator().next();
+        found = true;
+        break;
+      }
+    }
+    if (!found) {
+      (new AddContactToGroupTest()).contactToGroup();
+      before = app.db().contacts();
+      for ( ContactData contact :  before ) {
+        Groups groups = contact.getGroups();
+        if (groups.size()!=0) {
+          deleteContactGroup = contact;
+          deleteGroup = groups.delegate().iterator().next();
+          break;
+        }
+      }
+    }
+    app.goTo().returnToHomePage();
+    app.getContactHelper().selectGroup(deleteGroup.getGroupName());
+    app.getContactHelper().clickSelectedById(deleteContactGroup);
+    app.getContactHelper().removeFromGroup();
+    Contacts after = app.db().contacts();
+    String aftergroup="";
+    Groups groups = new Groups();
+    boolean leftDeletedGroup = false;
+    for ( ContactData contact :  after ) {
+      if (contact.equals(deleteContactGroup))
+        groups = contact.getGroups();
+      for (GroupData group: groups) {
+        if (group.getGroupName().equals(deleteGroup.getGroupName()))
+          leftDeletedGroup = true;
+      }
+    }
+    assertThat(leftDeletedGroup, equalTo(false));
+  }
+ /* @Test
   public void testAddContactToGroup() {
     Contacts contacts = app.db().contacts();
     ContactData contact = contacts.iterator().next();
@@ -62,32 +106,6 @@ public class RemoveContactFromGroupTests extends TestBase{
     assertThat(afterContacts, equalTo(beforeContacts - 1));
   }
 
+*/
 
-  /*@Test (enabled = false)
-  public void testRemoveContactFromGroup() {
-    Groups groups = app.db().groups();
-    GroupData ourGroup = groups.iterator().next();
-    app.returnToHomePage();
-    ContactData removingContact = new ContactData().withName("first")
-            .withLastName("last name")
-            .withAddress("Moscow")
-            .withMobilePhone("+71234567890")
-            .withEmail("test@test.com").inGroup(ourGroup);
-    app.gotoContactPage();
-    app.contact().createContact(removingContact);
-
-    int id = app.db().getContactLastId(removingContact);
-    app.group().selectGroupToCheckIncludedContacts(ourGroup);
-    app.contact().selectContactById(id);
-    app.contact().removeContactFromGroup();
-    ContactData contactToCompare = new ContactData();
-    Contacts afterContacts = app.db().contacts();
-    for(ContactData contact: afterContacts){
-         if (contact.getId() == id){
-        contactToCompare = contact;
-        break;
-      }
-    }
-        assertThat(contactToCompare.inGroup(ourGroup).getGroups(), equalTo(removingContact.getGroups()));
-  }*/
 }

@@ -34,13 +34,13 @@ public class GroupData {
   private  String footer;
 
 
- // @ManyToMany(mappedBy = "groups")
- // private Set<ContactData> contacts = new HashSet<ContactData>();
+ @ManyToMany(mappedBy = "groups")
+ private Set<ContactData> contacts = new HashSet<ContactData>();
 
-  @ManyToMany(fetch = FetchType.EAGER)
+/*  @ManyToMany(fetch = FetchType.EAGER)
   @JoinTable(name = "address_in_groups",
           joinColumns = @JoinColumn(name = "group_id"), inverseJoinColumns = @JoinColumn(name = "id"))
-  private Set<ContactData> contacts = new HashSet<ContactData>();
+  private Set<ContactData> contacts = new HashSet<ContactData>();*/
 
   public Set<ContactData> getContacts() {
     return contacts;
@@ -80,6 +80,10 @@ public class GroupData {
   public GroupData withFooter(String footer) {
     this.footer = footer;
     return this;
+  }
+
+  public String getGroupName() {
+    return name;
   }
 
   @Override
