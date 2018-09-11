@@ -1,79 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af27dbb1-172d-412a-b90b-ed5bd25e18b5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.stqa.pft.addressbook.tests.AddContactToGroupTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.stqa.pft.addressbook.tests.ContactDeletionTests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.stqa.pft.addressbook.tests.ContactModificationTests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.stqa.pft.addressbook.tests.ContactPhoneTests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.stqa.pft.addressbook.tests.DbConnectionTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.stqa.pft.addressbook.tests.GroupCreationTests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.stqa.pft.addressbook.tests.GroupDeletionTests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.stqa.pft.addressbook.tests.GroupModificationTests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.stqa.pft.addressbook.tests.HbConnectionTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.stqa.pft.addressbook.tests.NewContactCreationTests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.stqa.pft.addressbook.tests.RemoveContactFromGroupTests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ru.stqa.pft.addressbook.tests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/testContacts/classes/ru.stqa.pft.addressbook.tests.NewContactCreationTests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/testContacts/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/testContacts/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/testContacts/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/testContacts/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/testContacts/packages/ru.stqa.pft.addressbook.tests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/remote.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/remote.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ru.stqa.pft.addressbook.tests.AddContactToGroupTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ru.stqa.pft.addressbook.tests.ContactDeletionTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ru.stqa.pft.addressbook.tests.ContactModificationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ru.stqa.pft.addressbook.tests.ContactPhoneTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ru.stqa.pft.addressbook.tests.DbConnectionTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ru.stqa.pft.addressbook.tests.GroupCreationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ru.stqa.pft.addressbook.tests.GroupDeletionTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ru.stqa.pft.addressbook.tests.GroupModificationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ru.stqa.pft.addressbook.tests.HbConnectionTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ru.stqa.pft.addressbook.tests.NewContactCreationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ru.stqa.pft.addressbook.tests.RemoveContactFromGroupTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/testContacts/TEST-ru.stqa.pft.addressbook.tests.NewContactCreationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/testContacts/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/testContacts/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/testContacts/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_1296358700403887522_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_1542631880221690426_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_171060026093088797_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_2347109789213807902_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_3118872899338405648_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_4430046271301669862_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_5181962655782617689_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_7796801857508931859_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_7860615971082659306_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_9029421728363741952_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_9100332298164642513_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_940688313749287448_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_114148747950876961_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_1361146058132433566_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_1800241269844582562_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_219867388661017506_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_2877315676846364479_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_3102904713614834059_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_3881705318058318516_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_5003134933521721514_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_6331589501689954567_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_6427618056645574883_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_721603184813555980_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_765966128620078453_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_7774723797070368446_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_8132030637154887268_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_8234128698696109985_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" afterDir="false" />
-    </list>
+    <list default="true" id="af27dbb1-172d-412a-b90b-ed5bd25e18b5" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -130,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="816">
@@ -151,7 +79,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="remote.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="remote.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/remote.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -1548,7 +1476,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="3828" />
     <option name="y" value="564" />
     <option name="width" value="1944" />
@@ -2299,10 +2227,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/remote.properties">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        <state relative-caret-position="816">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -2316,10 +2244,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/remote.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        <state relative-caret-position="51">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
         </state>
       </provider>
     </entry>
