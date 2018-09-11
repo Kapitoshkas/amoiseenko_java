@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af27dbb1-172d-412a-b90b-ed5bd25e18b5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/testContacts/classes/ru.stqa.pft.addressbook.tests.ContactDeletionTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/testContacts/classes/ru.stqa.pft.addressbook.tests.ContactDeletionTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/testContacts/classes/ru.stqa.pft.addressbook.tests.ContactModificationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/testContacts/classes/ru.stqa.pft.addressbook.tests.ContactModificationTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/testContacts/classes/ru.stqa.pft.addressbook.tests.NewContactCreationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/testContacts/classes/ru.stqa.pft.addressbook.tests.NewContactCreationTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/testContacts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/testContacts/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/testContacts/packages/ru.stqa.pft.addressbook.tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/testContacts/packages/ru.stqa.pft.addressbook.tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/testGroups/classes/ru.stqa.pft.addressbook.tests.GroupCreationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/testGroups/classes/ru.stqa.pft.addressbook.tests.GroupCreationTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/testGroups/classes/ru.stqa.pft.addressbook.tests.GroupDeletionTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/testGroups/classes/ru.stqa.pft.addressbook.tests.GroupDeletionTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/testGroups/classes/ru.stqa.pft.addressbook.tests.GroupModificationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/testGroups/classes/ru.stqa.pft.addressbook.tests.GroupModificationTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/testGroups/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/testGroups/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/testGroups/packages/ru.stqa.pft.addressbook.tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/testGroups/packages/ru.stqa.pft.addressbook.tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/testng-contacts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/testng-contacts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/testContacts/TEST-ru.stqa.pft.addressbook.tests.ContactDeletionTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/testContacts/TEST-ru.stqa.pft.addressbook.tests.ContactDeletionTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/testContacts/TEST-ru.stqa.pft.addressbook.tests.ContactModificationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/testContacts/TEST-ru.stqa.pft.addressbook.tests.ContactModificationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/testContacts/TEST-ru.stqa.pft.addressbook.tests.NewContactCreationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/testContacts/TEST-ru.stqa.pft.addressbook.tests.NewContactCreationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/testContacts/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/testContacts/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/testContacts/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/testContacts/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/testContacts/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/testContacts/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/testGroups/TEST-ru.stqa.pft.addressbook.tests.GroupCreationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/testGroups/TEST-ru.stqa.pft.addressbook.tests.GroupCreationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/testGroups/TEST-ru.stqa.pft.addressbook.tests.GroupDeletionTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/testGroups/TEST-ru.stqa.pft.addressbook.tests.GroupDeletionTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/testGroups/TEST-ru.stqa.pft.addressbook.tests.GroupModificationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/testGroups/TEST-ru.stqa.pft.addressbook.tests.GroupModificationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/testGroups/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/testGroups/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/testGroups/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/testGroups/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_1629187508749610190_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_5326385164745199851_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testContacts/jar_extract_6969392270829896729_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testGroups/jar_extract_1974110842023518897_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testGroups/jar_extract_2146503865633468780_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/testGroups/jar_extract_6000026938754564844_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-contacts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng-contacts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/remote.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/remote.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -89,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactPhoneTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ContactPhoneTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/tests/ContactPhoneTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="51">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -110,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="remote.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="remote.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/remote.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -1502,8 +1473,8 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-groups.xml" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/remote.properties" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-contacts.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/remote.properties" />
       </list>
     </option>
   </component>
@@ -1899,12 +1870,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RemoveContactFromGroupTests - 2018.09.10 at 19h 24m 58s.xml">
-      <configuration name="RemoveContactFromGroupTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GroupModificationTests - 2018.09.10 at 19h 57m 31s.xml">
-      <configuration name="GroupModificationTests" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="GroupModificationTests - 2018.09.10 at 20h 01m 08s.xml">
       <configuration name="GroupModificationTests" configurationId="TestNG" />
     </history-entry>
@@ -1929,6 +1894,12 @@
     <history-entry file="GroupCreationTests - 2018.09.11 at 15h 52m 29s.xml">
       <configuration name="GroupCreationTests" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="ContactPhoneTests - 2018.09.11 at 16h 17m 54s.xml">
+      <configuration name="ContactPhoneTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactPhoneTests - 2018.09.11 at 16h 18m 25s.xml">
+      <configuration name="ContactPhoneTests" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="3828" y="564" width="1944" height="1064" extended-state="6" />
@@ -1942,12 +1913,12 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33982685" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33982685" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="right" id="Gradle" order="5" weight="0.3296875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -2249,23 +2220,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/remote.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/testng-contacts.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -2287,10 +2241,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/tests/ContactPhoneTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="51">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/remote.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
