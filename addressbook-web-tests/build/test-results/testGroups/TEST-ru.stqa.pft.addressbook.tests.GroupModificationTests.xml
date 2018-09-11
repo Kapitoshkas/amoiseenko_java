@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.addressbook.tests.GroupModificationTests" tests="3" skipped="1" failures="2" errors="0" timestamp="2018-09-11T10:42:07" hostname="amoiseyenko-new" time="1.398">
+<testsuite name="ru.stqa.pft.addressbook.tests.GroupModificationTests" tests="3" skipped="1" failures="2" errors="0" timestamp="2018-09-11T10:48:22" hostname="amoiseyenko-new" time="1.382">
   <properties/>
-  <testcase name="setUp" classname="ru.stqa.pft.addressbook.tests.GroupModificationTests" time="1.381">
+  <testcase name="setUp" classname="ru.stqa.pft.addressbook.tests.GroupModificationTests" time="1.363">
     <failure message="org.openqa.selenium.WebDriverException: Unrecognized platform: remote&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'AMOISEYENKO-NEW', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_141'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: Unrecognized platform: remote
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'AMOISEYENKO-NEW', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_141'
@@ -59,7 +59,7 @@ Driver info: driver.version: unknown
   <testcase name="testGroupModification" classname="ru.stqa.pft.addressbook.tests.GroupModificationTests" time="0.0">
     <skipped/>
   </testcase>
-  <testcase name="tearDown" classname="ru.stqa.pft.addressbook.tests.GroupModificationTests" time="0.001">
+  <testcase name="tearDown" classname="ru.stqa.pft.addressbook.tests.GroupModificationTests" time="0.0">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at ru.stqa.pft.addressbook.appmanager.ApplicationManager.stop(ApplicationManager.java:73)
 	at ru.stqa.pft.addressbook.tests.TestBase.tearDown(TestBase.java:36)
